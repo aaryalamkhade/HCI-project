@@ -18,7 +18,7 @@
 
 .centered {
   position: absolute;
-  top: 450%;
+  top: 500%;
   left: 27%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -27,7 +27,7 @@
 .left
 {
 position: absolute;
-  top: 50%;
+  top: 500%;
   left: 75%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -58,7 +58,7 @@ img.two {
 <div class="bs-example">
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         
-        <a href="#" class="navbar-brand"><img src="mit-logo.jpg" height="30" alt="MITAOE"></a>
+        <a href="#" class="navbar-brand"><img src="mit-logo.png" height="30" alt="MITAOE"></a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -69,9 +69,27 @@ img.two {
                    
                 </li>
                 <li class="nav-item">
-                    <a href="dashboard.php" class="nav-item nav-link active">Home</a>
+                    <a href="dashboard.php" class="nav-item nav-link active">Home </a>
                 </li>
-               
+                <li class="nav-item">
+                    <a href="https://mitaoe.ac.in/" class="nav-item nav-link active">About Us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="feedback.php" class="nav-item nav-link active">Feedback</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a style="color: white" href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contact Us</a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a href="Contactpage.php" class="dropdown-item">Email-Id</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="contactpagemobile.php"class="dropdown-item">Mobile</a>
+                    </div>
+                </li>
+
+
+                 
             </ul>
             <ul class="nav navbar-nav ml-auto">
                 <li class="nav-item dropdown">
@@ -87,13 +105,14 @@ img.two {
 
 <div class="split right">
   <div class="centered">
-
+ <div style="width:350px;height:390px;border:1px solid #000;margin:auto;
+margin:auto; background-color: #f2f2f2; padding: 19px;" >
     <font style="color:black" size="2" ><b> MISSION </b></font><br>
 <font style="color:black" size="2" >
 To leave no stone unturned in our endeavour to ensure that every  
 alumnus <br> looks back at us and says MITAOE has not merely taught us, it has educated us.
 </font>
-<br>
+<br><br>
 <font style="color:black" size="2" ><b> VISION </b></font><br>
 <font style="color:black" size="2">
 To develop MITAOE into a world-class learning center with an excellent ambience for <br> academics and research  conjugated with vibrant
@@ -101,28 +120,31 @@ To develop MITAOE into a world-class learning center with an excellent ambience 
 </font>
 </div>
 </div>
+</div>
 
 
+
+<div class="left">
+  <div style="width:340px;height:390px;border:1px solid #000;margin:auto;
+margin:auto; background-color: #f2f2f2; padding: 30px;" >
+
+    <h6><b>Course Categories</b></h6><br><br>
+     <a href="#" style="color: black" >First year</a><br>
+      <a href="#" style="color: black" >Computer Engineering</a><br>
+       <a href="#" style="color: black" >Mechanical Engineering</a><br>
+        <a href="#" style="color: black" >ENTC Engineering</a><br>
+         <a href="#" style="color: black" >ETX Engineering</a><br>
+          <a href="#" style="color: black" >Chemical Engineering</a><br>
+           <a href="#" style="color: black" >Civil Engineering</a><br>
+
+    
+
+</div>
+</div>
 
     </nav>
 </div>
 
-<div class="left">
-    <h4>Course Categories</h4>
-    <label for="cars"></label>
-
-<select name="cars" id="cars">
-  <option value="volvo">First year</option>
-  <option value="saab">Computer Engineering</option>
-  <option value="mercedes">Mechanical Engineering</option>
-  <option value="audi">ENTC Engineering</option>
-   <option value="saab">ETX Engineering</option>
-  <option value="mercedes">Chemical Engineering</option>
-  <option value="audi">Civil Engineering</option>
-</select>
-
-
-</div>
 
 </body>
 </html>                            

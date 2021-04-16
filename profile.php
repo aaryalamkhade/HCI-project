@@ -52,20 +52,16 @@
 <font style="color:black" size="2" ><b > &nbsp &nbsp Email-Id </b></font><br>
 <font style="color:black" size="2" >&nbsp  &nbsp arlamkhaade@mitaoe.ac.in</font><br><br>
 
-<font style="color:black" size="2" ><b > &nbsp &nbsp  Country </b></font><br>
-<font style="color:black" size="2" >&nbsp &nbsp India</font><br><br>
 
-<font style="color:black" size="2" ><b > &nbsp &nbsp City/Town</b></font><br>
-<font style="color:black" size="2" >&nbsp &nbsp pune</font><br><br>
+
 
 <font style="color:black" size="2" ><b > &nbsp &nbsp Institute </b></font><br>
 <font style="color:black" size="2" >&nbsp &nbsp MITAOE</font><br><br>
 
 <font style="color:black" size="2" ><b > &nbsp &nbsp Department </b></font><br>
-<font style="color:black" size="2" >&nbsp &nbsp Department</font><br><br>
+<font style="color:black" size="2" >&nbsp &nbsp Mobile</font><br><br>
 
-<font style="color:black" size="2" ><b > &nbsp &nbsp User details </b></font><br>
-<font style="color:black" size="2" >&nbsp &nbsp User details</font>
+
 
 </body>
 </html>                            

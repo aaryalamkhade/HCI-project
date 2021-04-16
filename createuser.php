@@ -51,16 +51,16 @@ a {
 .le
 {
 	position: absolute;
-  top: 82%;
-  left: 40%;
+  top: 92%;
+  left: 30%;
   transform: translate(-50%, -50%);
  
 }
 .ri
 {
 	position: absolute;
-  top: 82%;
-  left: 60%;
+  top: 92%;
+  left: 100%;
   transform: translate(-50%, -50%);
  ;
 }
@@ -81,44 +81,40 @@ a {
 
     <div class="centered">
 
-    <div style="width:320px;height:410px;border:1px solid #000;margin:auto;box-shadow: 5px 5px 10px 1px #000;
+    <div style="width:320px;height:460px;border:1px solid #000;margin:auto;box-shadow: 5px 5px 10px 1px #000;
 margin:auto;" >
 <br>
+<h3 class="text-center">Profile</h3>
     <div class="w-50  m-auto ">
-        <form action="userinfo.php" method="post">
+
+        <form action="dbuserinfo.php" method="post">
             <div class="form-group">
             <label >Full Name</label>
-             <input type="text" style="width: 250px;margin:auto;" name="Username"  class="form-control"> 
+             <input type="text" placeholder="Enter Full_Name" style="width: 250px;margin:auto;" name="Full_Name"  class="form-control" required> 
              </div>
              <div class="form-group">
             <label>E-mail</label>
-             <input type="E-mail" style="width: 250px;margin:auto;"  name="Passsword"  class="form-control"> 
+             <input type="E-mail" placeholder="Enter E-mail" style="width: 250px;margin:auto;"  name="e_mail" class="form-control" required> 
              </div>
             <div class="form-group">
             <label >Mobile</label>
-             <input type="Mobile" style="width: 250px;margin:auto;" name="Mobile"  class="form-control"> 
+             <input type="Mobile" placeholder="Enter Mobile" style="width: 250px;margin:auto;" name="mobile"  class="form-control" required> 
              </div>
              <div class="form-group" >
-           <label for="Branch" >Branch</label>
-       <select name="Institute" id="Institute">
-	 <option value="MIT-Loni">MIT-Loni</option>
-    <option value="MIT Academy of Engineering,Alandi">MIT Academy of Engineering,Alandi</option>
-    <option value="MIT-ADT University">MIT-ADT University</option>
+           <label for="Institute" >Institute</label>
+       <select name="institute" id="Institute" >
+       <option value="MIT Academy of Engineering,Alandi">MIT &nbsp Academy &nbsp of &nbsp Engineering</option>
     </select>
-         </div>
+   </div>
+   <div class="ri">
+   <button type="Submit" style="background-color:green ; color:white ;margin:auto;display:block;box-shadow: 5px 5px 10px 1px #000 ; " >Next</button>
+   </div>
        </form>
     </div>
 
+</div>
+</div>
 
-</div>
-</div>
-<div class="le">
- <a href="Login.php" class="previous round">&#8249;</a>
-
-</div>
-<div class="ri">
-	<a href="newuser.php" class="next round">&#8250;</a>
-</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

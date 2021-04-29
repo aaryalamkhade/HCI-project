@@ -47,19 +47,52 @@ img.two {
   width: 16%;
 }
 
+.CheckPoint
+{
+  position: absolute;
+          top: 3%;
+           left:17%;
+  height: 50%;
+  width: 50%;
+}
 
+body {
+
+  background-image: url('back2.jpg');
+ background-repeat: no-repeat;
+  background-attachment: fixed;
+    background-size: 100% 100%;
+   color: black;
+
+}
+img.three {
+   position: absolute;
+          top: 11%;
+           left:2%;
+  height: 35%;
+  width: 50%;
+}
 
 </style>
 
  <div class="centered">
 
-<img class="two" src="mit-logo.png" width="50" height="50">
-    <div style="width:310px;height:350px;border:1px solid #000;margin:auto;box-shadow: 5px 5px 10px 1px #000;
-margin:auto; background-color: #f2f2f2; " >
-<div class="py-5" >
-  
-      <h4 class="text-center">&nbsp &nbsp &nbsp Feedback</h4>
-    </div> <br>
+
+    <div style="width:310px;height:360px;border:1px solid #000;margin:auto;box-shadow: 5px 5px 10px 1px #000;
+margin:auto; background-color:white;border-radius: 25px " >
+<div class="CheckPoint"><img class="two" src="mitlogo.png" width="50" height="50"><h6>CheckPoint</h6></div>
+
+
+ <img class="three" src="feedback.png" width="50" height="50"> <br>
+<br>
+<br>
+  <h4 >&nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp FeedBack</h4>
+
+
+<br>
+<br>
+
+ <br>
     <div class="w-50  m-auto ">
        <form action="mailto:arlamkhade21@gmail.com" method="post" >
             <div class="form-group">
@@ -67,8 +100,8 @@ margin:auto; background-color: #f2f2f2; " >
            <textarea rows="3" cols="32" placeholder="Write your Feedback"></textarea>
            </div>
 
-            <br>
-             <button type="Submit" style="background-color:green ; color:white ;margin:auto;display:block;box-shadow: 5px 5px 10px 1px #000 ; " >Submit</button>
+           
+             <button type="Submit" style="background-color:green ; color:white ;margin:auto;display:block;box-shadow: 5px 5px 10px 1px #000 ;width: 90px; border-radius: 25px" >Submit</button>
         </form>
     </div>
 
@@ -77,7 +110,11 @@ margin:auto; background-color: #f2f2f2; " >
 
 </div>
 </div>
-
+<script>
+function myFunction() {
+  alert("The form was submitted");
+}
+</script>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

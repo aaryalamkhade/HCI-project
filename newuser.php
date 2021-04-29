@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
+
 <script>
           
             // Function to check Whether both passwords
@@ -52,6 +53,15 @@
 div {
         margin-bottom: -50px ; margin-left: -50px;
       }
+body {
+
+  background-image: url('back2.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  color: black;
+
+}
 
 .centered {
   position: absolute;
@@ -88,7 +98,7 @@ div {
 .le
 {
 	position: absolute;
-  top: 87%;
+  top: 92%;
   left: 14%;
   transform: translate(-50%, -50%);
  
@@ -106,7 +116,7 @@ div {
 .ri
 {
   position: absolute;
-  top: 86%;
+  top: 92%;
   left: 82%;
   transform: translate(-50%, -50%);
  ;
@@ -119,7 +129,22 @@ div {
   left: 70%;
   transform: translate(-50%, -50%);
 }
+.checkpoint
+{
+  position: absolute;
+  top: 6%;
+  left: 32%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 
+
+img.two {
+   position: absolute;
+          top: -8%;
+           left:-35%;
+
+}
 
 </style>
 
@@ -128,25 +153,30 @@ div {
 
     <div class="centered">
 
-    <div style="width:300px;height:370px;border:1px solid #000;margin:auto;box-shadow: 5px 5px 10px 1px #000;
-margin:auto; " >
+    <div style="width:350px;height:450px;border:1px solid #000;margin:auto;box-shadow: 5px 5px 10px 1px #000;
+margin:auto;background-color: white;border-radius: 25px; " >
 <br>
+
+<h5 class="checkpoint"><img class="two" src="mitlogo.png" width="35" height="35">CheckPoint</h5>
+<br><br>
+  <h4>Create An Account</h4>
     <div class="w-55  m-auto ">
         <form action="dbnewuser.php" method="post" onSubmit = "return checkPassword(this)">
-            <div class="form-group">
+            <div class="form-group"><br>
+
             <label >&nbsp &nbsp &nbsp UserName</label>
-             <input type="text" placeholder="Enter Username" style="width: 250px;margin:auto;" name="username"  class="form-control" required> 
+             <input type="text" placeholder="Enter Username" style="width: 300px;margin:auto;" name="username"  class="form-control" required> 
              </div>
              <div class="form-group">
             <label>&nbsp &nbsp &nbsp Password</label>
-             <input type="text"   placeholder="Enter Password" style="width: 250px;margin:auto;"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" name="password1"  class="form-control" required> 
+             <input type="text"   placeholder="Enter Password" style="width: 300px;margin:auto;"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" name="password1"  class="form-control" required> 
              </div>
             <div class="form-group">
             <label>&nbsp &nbsp &nbsp Confirm Password</label>
-             <input type="text"   placeholder="Enter Password" style="width: 250px;margin:auto;"  name="password2"  class="form-control" required> 
+             <input type="text"   placeholder="Enter Password" style="width: 300px;margin:auto;"  name="password2"  class="form-control" required> 
              </div>
              <div class="ri">
-   <button type="Submit" style=" width:70px;height:30px;background-color:green ; color:white ;margin:auto;display:block;box-shadow: 5px 5px 10px 1px #000 ;" >Sign in </button>
+   <button type="Submit" style=" width:90px;height:30px;background-color:green ; color:white ;margin:auto;display:block;box-shadow: 5px 5px 10px 1px #000 ;border-radius: 25px" >Sign in </button>
    </div>
    <div class="le">
  <a href="createuser.php" class="previous round">&#8249;</a>
@@ -157,7 +187,7 @@ margin:auto; " >
 </div>
 
 <div class="validation" style="width:300px;height:230px;border:1px solid #000;margin:auto;box-shadow: 5px 5px 10px 1px #000;
-padding: 16px">
+padding: 16px; background-color: white;border-radius: 25px;" >
   <h6>Password must contain the following:</h6>
   <p id="letter" class="invalid">A <b style="color: red">lowercase</b> letter</p>
   <p id="capital" class="invalid">A <b style="color: red">capital (uppercase)</b> letter</p>
@@ -170,14 +200,7 @@ padding: 16px">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<button class="button button4" ; style="margin: 15px" ; onclick="myFunction()">Dark Mode</button>
 
-<script>
-function myFunction() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
-}
-</script>
 
 </body>
 </html>

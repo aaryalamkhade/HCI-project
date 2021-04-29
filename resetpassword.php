@@ -154,7 +154,7 @@ margin:auto;background-color: white; border-radius:  25px  " >
 
 <img class="two" src="pass.png" width="50" height="50">
 <br><br>
- <h4>Forget Your Password?</h4>
+ <h4>Reset Password?</h4>
 
               <div class="form-group">
             <label>New Password</label>

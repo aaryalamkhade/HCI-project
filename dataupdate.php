@@ -1,3 +1,7 @@
+<?php
+$mm = $_GET["id"];
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,11 +14,19 @@
 div {
         margin-bottom: -50px ; margin-left: -50px;
       }
+      img.three {
+   position: absolute;
+          top: 11%;
+           left:2%;
+  height: 35%;
+  width: 50%;
+}
+
       
 .centered {
   position: absolute;
   top: 51%;
-  left: 67%;
+  left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
@@ -74,7 +86,7 @@ img.two {
 {
 	position: absolute;
   top: 92%;
-  left: 100%;
+  left: 65%;
   transform: translate(-50%, -50%);
  ;
 }
@@ -115,34 +127,17 @@ body {
 
     <div class="centered">
 
-    <div style="width:350px;height:500px;border:1px solid #000;margin:auto;box-shadow: 5px 5px 10px 1px #000;
-margin:auto;background: white ;border-radius: 0px 25px 25px 0px;" >
+    <div style="width:380px;height:500px;border:1px solid #000;margin:auto;box-shadow: 5px 5px 10px 1px #000;
+margin:auto;background: white ;border-radius: 25px ;" >
 <br>
-<h4 class="text-center">Tell Us About Yourself!</h4>
-  <hr class="my-4" />
+<h4 class="text-center">Response Has Been Recorded!!</h4>
+<img class="three" src="thumps_up.jpg" width="50" height="50"> <br>
     <div class="w-50  m-auto ">
 
-        <form action="dbuserinfo.php" method="post">
-            <div class="form-group">
-            <label >Full Name</label>
-             <input type="text" placeholder="Enter Full_Name" style="width: 250px;margin:auto;" name="Full_Name"  class="form-control" required> 
-             </div>
-             <div class="form-group">
-            <label>E-mail</label>
-             <input type="E-mail" placeholder="Enter E-mail" style="width: 250px;margin:auto;"  name="e_mail" class="form-control" required> 
-             </div>
-            <div class="form-group">
-            <label >Mobile</label>
-             <input type="Mobile" placeholder="Enter Mobile" style="width: 250px;margin:auto;" name="mobile"  class="form-control" required> 
-             </div>
-             <div class="form-group" >
-           <label for="Institute" >Institute</label>
-       <select name="institute" id="Institute" style="  padding: 5px 0;">
-       <option value="MIT Academy of Engineering,Alandi">MIT &nbsp Academy &nbsp of &nbsp Engineering</option>
-    </select>
-   </div>
+        <form action="newprofile.php?id=<?php echo $mm ?>" method="post">
+            
    <div class="ri">
-   <button type="Submit" style="background-color:green ; color:white ;margin:auto;display:block;box-shadow: 5px 5px 10px 1px #000 ;border-radius: 15px;width: 65px " >Next</button>
+   <button type="Submit" style="background-color:green ; color:white ;margin:auto;display:block;box-shadow: 5px 5px 10px 1px #000 ;border-radius: 15px;width: 90px " >Done</button>
    </div>
        </form>
     </div>
@@ -150,23 +145,7 @@ margin:auto;background: white ;border-radius: 0px 25px 25px 0px;" >
 </div>
 </div>
 
-<div class="rightbox"
-style="width:260px;height:500px;border:1px solid #000;margin:auto;box-shadow:-8px 8px 10px 1px #000;
-margin:auto; background-color:white;border-radius:  25px 0px  0px 25px; "; ><br>
 
- <h5 class="checkpoint"><img class="two" src="mitlogo.png" width="50" height="50"> CheckPoint</h5>
-
-<br>
-<img class="three" src="create.jpg" width="300" height="300">
-<br>
-<br>
-<br>
-<br>
-<br>
-<br><br><br><br><br><br><br><br><br><br>
-<b>&nbsp “Either you run the day or the day runs you.”</b>
-
-</div>
 <script src="https://kit.fontawesome.com/yourcode.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>

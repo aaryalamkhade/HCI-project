@@ -1,9 +1,4 @@
-<?php
-$mm = $_GET["id"];
-?>
-
-
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -20,7 +15,6 @@ $mm = $_GET["id"];
   left: 10;
  
 }
-
 
 .centered {
   position: absolute;
@@ -57,12 +51,7 @@ img.two {
   text-align: center;
 
 }
-.button4 {border-radius: 8px;}
-.dark-mode {
 
-  background-color: black;
-  
-}
 </style>
 </head>
 <body>
@@ -106,17 +95,13 @@ img.two {
                 <li class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><img src="profile.png" height="30" alt="MITAOE"></a>
                     <div class="dropdown-menu dropdown-menu-right">
-                        <a href="profile.php?id=<?php echo $mm ?>"  class="dropdown-item">Profile</a>
+                        <a href="profile.php" class="dropdown-item">Profile</a>
                         <div class="dropdown-divider"></div>
                         <a href="Login.php"class="dropdown-item">Logout</a>
                     </div>
                 </li>
             </ul>
         </div>
-
-
-
-
 
 <div class="split right">
   <div class="centered">
@@ -144,13 +129,13 @@ To develop MITAOE into a world-class learning center with an excellent ambience 
 margin:auto; background-color: #f2f2f2; padding: 30px;" >
 
     <h6><b>Course Categories</b></h6><br><br>
-     <a href="firstyear.php" style="color: black" >First year</a><br>
+     <a href="#" style="color: black" >First year</a><br>
       <a href="computer.php" style="color: black" >Computer Engineering</a><br>
-       <a href="computer.php" style="color: black" >Mechanical Engineering</a><br>
-        <a href="computer.php" style="color: black" >ENTC Engineering</a><br>
-         <a href="computer.php" style="color: black" >ETX Engineering</a><br>
-          <a href="computer.php" style="color: black" >Chemical Engineering</a><br>
-           <a href="computer.php" style="color: black" >Civil Engineering</a><br>
+       <a href="#" style="color: black" >Mechanical Engineering</a><br>
+        <a href="#" style="color: black" >ENTC Engineering</a><br>
+         <a href="#" style="color: black" >ETX Engineering</a><br>
+          <a href="#" style="color: black" >Chemical Engineering</a><br>
+           <a href="#" style="color: black" >Civil Engineering</a><br>
 
     
 
@@ -160,13 +145,6 @@ margin:auto; background-color: #f2f2f2; padding: 30px;" >
     </nav>
 </div>
 
-<button class="button button4" ; style="margin: 15px" ; onclick="myFunction()">DarkMode</button>
 
-<script>
-function myFunction() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
-}
-</script>
 </body>
 </html>                            

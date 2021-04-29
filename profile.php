@@ -1,3 +1,33 @@
+<?php
+$mm = $_GET["id"];
+?>
+
+<?php
+    $serverame = "localhost";
+$dbUsername = "root";
+$dbpassword = "";
+$dbname = "demo";
+    
+    $conn = mysqli_connect($serverame , $dbUsername , $dbpassword , $dbname );
+if(!$conn){
+    die("Connection to database Failed : ".mysql_coect_error());
+}
+if(isset(($_GET["id"]))) {
+    $mm = $_GET['id'];
+    $dbinfo = " SELECT Full_Name, e_mail, mobile, institute,username from userinfodata WHERE id='$mm'";
+    $dbresult = mysqli_query($conn, $dbinfo);
+    $rt = mysqli_fetch_array($dbresult);
+
+    $Full_Name = $rt['Full_Name'];
+    $e_mail = $rt['e_mail'];
+    $mobile = $rt['mobile'];
+    $institute = $rt['institute'];
+    $username = $rt['username'];
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +45,7 @@
 </head>
 <body>
 <div class="bs-example">
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-light bg-light white">
         <a href="#" class="navbar-brand"><img src="profile.png" height="30" alt="MITAOE"></a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -23,17 +53,17 @@
         <div id="navbarCollapse" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li class="nav-item">
-                     <span class="navbar-text">arlamkhade &nbsp &nbsp</span>
+                     <span class="navbar-text"><?php echo $username?>&nbsp &nbsp</span>
                    
                 </li>
                 <li class="nav-item">
-                    <a href="dashboard.php" class="nav-item nav-link active">Dashboard</a>
+                    <a href="dashboard.php?id=<?php echo $mm ?>" class="nav-item nav-link active">Dashboard</a>
                 </li>
                
             </ul>
             <ul class="nav navbar-nav ml-auto">
                 <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><img src="settings.jpg" height="30" alt="MITAOE"></a>
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><img src="settings.jpg" height="35" alt="MITAOE"></a>
                     <div class="dropdown-menu dropdown-menu-right">
                         <a href="#" class="dropdown-item">Edit profile</a>
                         <a href="newpassword.php" class="dropdown-item">Change Password</a>
@@ -46,21 +76,18 @@
     </nav>
 </div>
 
-<br>
-<font style="color:grey" size="2" >&nbsp   &nbsp User details</font>
-<br><br>
-<font style="color:black" size="2" ><b > &nbsp &nbsp Email-Id </b></font><br>
-<font style="color:black" size="2" >&nbsp  &nbsp arlamkhaade@mitaoe.ac.in</font><br><br>
-
-
-
-
-<font style="color:black" size="2" ><b > &nbsp &nbsp Institute </b></font><br>
-<font style="color:black" size="2" >&nbsp &nbsp MITAOE</font><br><br>
-
-<font style="color:black" size="2" ><b > &nbsp &nbsp Department </b></font><br>
-<font style="color:black" size="2" >&nbsp &nbsp Mobile</font><br><br>
-
+<h1>MY PROFILE</h1>
+<?php
+    echo "Full_Name : ", $Full_Name;  
+    echo "</br>";  
+    echo "e_mail : ", $e_mail;  
+    echo "</br>";  
+    echo "mobile : ", $mobile;  
+    echo "</br>";  
+    echo "institute : ", $institute;  
+    echo "</br>";  
+    
+?>
 
 
 </body>

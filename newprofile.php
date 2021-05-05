@@ -170,7 +170,7 @@ img.two {
 
                         <a href="resetpassword.php?id=<?php echo $mm ?>" class="dropdown-item">Change Password</a>
 
-                        <a href="Login.php"class="dropdown-item">Logout</a>
+                        <a href="Login.php"class="dropdown-item" style="background-color: red">Logout</a>
                     </div>
                 </li>
             </ul>

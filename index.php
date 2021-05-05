@@ -111,7 +111,7 @@ img.two {
     <ul class="navbar-nav">
     	
       <li class="nav-item active">
-        <a class="nav-link" href="dashboard.php"><b>Home</b> </a>
+        <a class="nav-link" href="index.php?id=<?php echo $mm ?>"><b>Home</b> </a>
       </li>
       <li class="nav-item active">
         <a class="nav-link" href="https://mitaoe.ac.in/"><b>About us</b></a>
@@ -145,7 +145,7 @@ img.two {
                     <div class="dropdown-menu dropdown-menu-right">
                         <a href="newprofile.php?id=<?php echo $mm ?>"  class="dropdown-item">Profile</a>
                         <div class="dropdown-divider"></div>
-                        <a href="Login.php"class="dropdown-item">Logout</a>
+                        <a href="Login.php"class="dropdown-item" style="background-color: red;">Logout</a>
                     </div>
                 </li>
             </ul>

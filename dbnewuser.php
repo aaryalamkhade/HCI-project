@@ -1,3 +1,5 @@
+ 
+
  <?php 
 $con=mysqli_connect('localhost','root');
 if($con)
@@ -21,6 +23,6 @@ $query1="update userinfodata set username='$username' where id=(select max(id) f
 
 mysqli_query($con, $query );
 mysqli_query($con, $query1 );
-header('location:dashboard.php');
+header("location:welcome.php");
 
  ?>

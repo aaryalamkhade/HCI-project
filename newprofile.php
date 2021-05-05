@@ -168,7 +168,7 @@ img.two {
                     <div class="dropdown-menu dropdown-menu-right">
                         <a href="editprofile.php?id=<?php echo $mm ?>" class="dropdown-item">Edit profile</a>
 
-                        <a href="resetpassword.php" class="dropdown-item">Change Password</a>
+                        <a href="resetpassword.php?id=<?php echo $mm ?>" class="dropdown-item">Change Password</a>
 
                         <a href="Login.php"class="dropdown-item">Logout</a>
                     </div>

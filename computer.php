@@ -160,7 +160,7 @@ img.two {
 
 <div class="container-fluid">
       <div class="jumbotron">
-        <form action="dbattendance.php" method="post" >
+        <form action="dbattendance.php?id=<?php echo $mm ?>" method="post" >
 <br>
 <br>
 <br>

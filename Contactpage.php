@@ -88,7 +88,7 @@ margin:auto; background-color: white;border-radius: 25px " >
        <form action="mailto:arlamkhade21@gmail.com" method="post" >
             <div class="form-group">
               <label >Query</label>
-           <textarea rows="3" cols="32" placeholder="Write your Query"></textarea>
+          <input type="text" placeholder=" Write your Query " style="width: 250px;height: 90px;margin:auto;font-family: FontAwesome;" name="Query"  class="form-control" required> 
            </div>
 
             

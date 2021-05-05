@@ -6,7 +6,6 @@
     <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
   <style>
 div {
         margin-bottom: -50px ; margin-left: -50px;
@@ -97,9 +96,9 @@ margin:auto; background-color:white;border-radius: 25px " >
        <form action="mailto:arlamkhade21@gmail.com" method="post" >
             <div class="form-group">
               <label >Give us a Feedback</label>
-           <textarea rows="3" cols="32" placeholder="Write your Feedback"></textarea>
+          <input type="text" placeholder=" Write your Feedback " style="width: 250px;height: 90px;margin:auto;font-family: FontAwesome;" name="feedback"  class="form-control" required> 
            </div>
-
+ 
            
              <button type="Submit" style="background-color:green ; color:white ;margin:auto;display:block;box-shadow: 5px 5px 10px 1px #000 ;width: 90px; border-radius: 25px" >Submit</button>
         </form>

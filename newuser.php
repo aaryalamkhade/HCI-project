@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -176,7 +178,7 @@ margin:auto;background-color: white;border-radius: 25px; " >
              <input type="text"   placeholder="Enter Password" style="width: 300px;margin:auto;"  name="password2"  class="form-control" required> 
              </div>
              <div class="ri">
-   <button type="Submit" style=" width:90px;height:30px;background-color:green ; color:white ;margin:auto;display:block;box-shadow: 5px 5px 10px 1px #000 ;border-radius: 25px" >Sign in </button>
+   <button type="Submit" style=" width:90px;height:30px;background-color:green ; color:white ;margin:auto;display:block;box-shadow: 5px 5px 10px 1px #000 ;border-radius: 25px" >Done</button>
    </div>
    <div class="le">
  <a href="createuser.php" class="previous round">&#8249;</a>

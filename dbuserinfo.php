@@ -1,3 +1,4 @@
+
 <?php 
 $con=mysqli_connect('localhost','root');
 if($con)
@@ -21,6 +22,6 @@ values ('$Full_Name','$e_mail','$mobile','$institute') ";
 
 
 mysqli_query($con, $query );
-header('location:newuser.php');
+header("location:newuser.php");
 
  ?>

@@ -1,3 +1,8 @@
+<?php
+$mm = $_GET["id"];
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -148,7 +153,7 @@ img.two {
 margin:auto;background-color: white; border-radius:  25px  " >
 <br>
     <div class="w-50  m-auto ">
-        <form  action ="dbpassword.php" method="post"  onSubmit = "return checkPassword(this)">
+        <form  action ="dbresetpass.php?id=<?php echo $mm ?>" method="post"  onSubmit = "return checkPassword(this)">
 
             <br>
 

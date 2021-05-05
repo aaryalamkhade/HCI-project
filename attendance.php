@@ -95,7 +95,7 @@ img.two {
                 <li class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><img src="profile.png" height="30" alt="MITAOE"></a>
                     <div class="dropdown-menu dropdown-menu-right">
-                        <a href="profile.php" class="dropdown-item">Profile</a>
+                        <a href="newprofile.php" class="dropdown-item">Profile</a>
                         <div class="dropdown-divider"></div>
                         <a href="Login.php"class="dropdown-item">Logout</a>
                     </div>

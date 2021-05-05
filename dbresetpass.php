@@ -1,3 +1,8 @@
+ 
+<?php
+$mm = $_GET["id"];
+?>
+
  <?php 
 $con=mysqli_connect('localhost','root');
 if($con)
@@ -14,10 +19,10 @@ $username=$_POST['username'];
 $password1=$_POST['password1'];
 
 
-$query="update userinfodata set password1='$password1'  where username='$username'";
+$query="update userinfodata set password1='$password1'  where id='$mm'";
 
 mysqli_query($con, $query );
-header('location:passwordresponse.php');
+header("location:resetpassresponse.php?id=".$mm);
 
  ?>
  

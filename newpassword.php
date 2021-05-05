@@ -105,7 +105,7 @@ body {
 .le
 {
   position: absolute;
-  top: 87%;
+  top: 93%;
   left: 30%;
   transform: translate(-50%, -50%);
  
@@ -113,7 +113,7 @@ body {
 .ri
 {
   position: absolute;
-  top: 87%;
+  top: 93%;
   left: 99%;
   transform: translate(-50%, -50%);
  ;
@@ -144,7 +144,7 @@ img.two {
 
     <div class="centered">
 
-    <div style="width:300px;height:415px;border:1px solid #000;margin:auto;box-shadow: 5px 5px 10px 1px #000;
+    <div style="width:300px;height:460px;border:1px solid #000;margin:auto;box-shadow: 5px 5px 10px 1px #000;
 margin:auto;background-color: white; border-radius:  25px  " >
 <br>
     <div class="w-50  m-auto ">
@@ -155,6 +155,14 @@ margin:auto;background-color: white; border-radius:  25px  " >
 <img class="two" src="pass.png" width="50" height="50">
 <br><br>
  <h4>Forget Your Password?</h4>
+
+                  
+
+               <div class="form-group">
+            <label>Username</label>
+            
+             <input type="text" style="width: 250px;margin:auto;" autocomplete="off" name="username"  class="form-control"> 
+             </div>
 
               <div class="form-group">
             <label>New Password</label>

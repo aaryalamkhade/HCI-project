@@ -166,7 +166,7 @@ img.two {
 alumnus <br> looks back at us and says MITAOE has not merely taught us, it has educated us.
         </p>
         <hr class="my-4" />
-        <p style= size="2" ><b>Vission</b></p>
+        <p style= size="2" ><b>Vision</b></p>
         <p>
         To develop MITAOE into a world-class learning center with an excellent ambience for  academics and research  conjugated with vibrant
  environment for honing the extra and cocurricular skills of all  its stake holders to enable them to meet the challenge of  a   fiercely   competitive world.
